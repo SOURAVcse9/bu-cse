@@ -1,0 +1,10 @@
+.custom-footer {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  background-color: aquamarine;
+  align-items: center;
+  text-align: center;
+  font-style:italic;
+}
+.customimage{
+    border-radius: 50%;
+}

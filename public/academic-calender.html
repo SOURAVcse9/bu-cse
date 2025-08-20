@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE Department | BU</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+
+  <!-- Tailwind CSS -->
+  <link href="../src/input.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="custom.css">
+</head>
+<body class="font-sans bg-gray-50 text-gray-900">
+
+<!-- Navbar -->
+<header class="bg-blue-900 text-white shadow-md fixed w-full z-50">
+  <nav class="max-w-7xl mx-auto px-6">
+    <div class="navbar">
+      
+      <!-- Logo -->
+      <div class="flex-1">
+        <a href="index.html" class="text-2xl font-bold">CSE Department</a>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-6 text-lg">
+        <a href="index.html" class="hover:text-yellow-400">Home</a>
+        <a href="#about" class="hover:text-yellow-400">About Us</a>
+
+        <!-- academics Dropdown -->
+        <div class="dropdown dropdown-hover">
+          <label tabindex="0" class="hover:text-yellow-400 cursor-pointer">Academics</label>
+          <ul tabindex="0" class="hover:text-yellow-400 dropdown-content menu p-2 shadow bg-blue-900 rounded-box w-52">
+            <li><a href="#academic-calender">Academic Calender</a></li>
+            <li><a href="#class-routine">Class Routine</a></li>
+            
+          </ul>
+        </div>
+
+        <!-- Faculty Dropdown -->
+        <div class="dropdown dropdown-hover">
+          <label tabindex="0" class="hover:text-yellow-400 cursor-pointer">Faculty & Staff</label>
+          <ul tabindex="0" class="hover:text-yellow-400 dropdown-content menu p-2 shadow bg-blue-900 rounded-box w-52">
+            <li><a href="faculty.html">All Faculty</a></li>
+            <li><a href="#professors">Professors</a></li>
+            <li><a href="#lecturers">Lecturers</a></li>
+            <li><a href="#pastfaculties">Past Faculties</a></li>
+            <li><a href="#officer&staff">Officer & Staff</a></li>
+          </ul>
+        </div>
+
+        <!-- Programs Dropdown -->
+        <div class="dropdown dropdown-hover">
+          <label tabindex="0" class="hover:text-yellow-400 cursor-pointer">Programs</label>
+          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-blue-800 rounded-box w-52">
+            <li><a href="#programs">Undergraduate</a></li>
+            <li><a href="#graduate">Graduate</a></li>
+            <li><a href="#phd">PhD</a></li>
+          </ul>
+        </div>
+
+        <a href="notices.html" class="hover:text-yellow-400">Notice</a>
+
+        <!-- Research Dropdown -->
+        <div class="dropdown dropdown-hover">
+          <label tabindex="0" class="hover:text-yellow-400 cursor-pointer">Research</label>
+          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-blue-800 rounded-box w-52">
+            <li><a href="research.html">All Research</a></li>
+            <li><a href="#ai">AI & ML</a></li>
+            <li><a href="#cyber">Cybersecurity</a></li>
+            <li><a href="#datasci">Data Science</a></li>
+            <li><a href="#algorithm">Algorithms & Theory</a></li>
+          </ul>
+        </div>
+
+        <!-- Students Dropdown -->
+        <div class="dropdown dropdown-hover">
+          <label tabindex="0" class="hover:text-yellow-400 cursor-pointer">Students</label>
+          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-blue-800 rounded-box w-52">
+<li><a href="club.html">Clubs & Societies</a></li>
+            
+          </ul>
+        </div>
+
+        <a href="#contact" class="hover:text-yellow-400">Contact Us</a>
+      </div>
+
+     <!-- Mobile Dropdown -->
+<div class="md:hidden">
+  <div class="dropdown dropdown-end">
+    <label tabindex="0" class="btn btn-sm btn-outline text-white">☰</label>
+    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-blue-900 rounded-box w-52">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      
+
+      <!--academics-->
+
+      <li>
+        <details>
+          <summary>Academics</summary>
+          <ul class="p-2 bg-blue-800">
+             <li><a href="#academic-calender">Academic Calender</a></li>
+            <li><a href="#class-routine">Class Routine</a></li>
+          </ul>
+        </details>
+      </li>
+      <!-- Faculty Dropdown -->
+      <li>
+        <details>
+          <summary>Faculty & Staff</summary>
+          <ul class="p-2 bg-blue-800">
+            <li><a href="faculty.html">All Faculty</a></li>
+            <li><a href="#professors">Professors</a></li>
+            <li><a href="#lecturers">Lecturers</a></li>
+            <li><a href="#pastfaculties">Past Faculties</a></li>
+            <li><a href="#officer&staff">Officer & Staff</a></li>
+          </ul>
+        </details>
+      </li>
+
+
+      <!-- Programs Dropdown -->
+      <li>
+        <details>
+          <summary>Programs</summary>
+          <ul class="p-2 bg-blue-800">
+            <li><a href="#programs">Undergraduate</a></li>
+            <li><a href="#graduate">Graduate</a></li>
+            <li><a href="#phd">PhD</a></li>
+          </ul>
+        </details>
+      </li>
+
+      <!-- Research Dropdown -->
+      <li>
+        <details>
+          <summary>Research</summary>
+          <ul class="p-2 bg-blue-800">
+            <li><a href="research.html">All Research</a></li>
+            <li><a href="#ai">AI & ML</a></li>
+            <li><a href="#cyber">Cybersecurity</a></li>
+            <li><a href="#datasci">Data Science</a></li>
+            <li><a href="#algorithm">Algorithms & Theory</a></li>
+          </ul>
+        </details>
+      </li>
+
+      <!-- Students Dropdown -->
+      <li>
+        <details>
+          <summary>Students</summary>
+          <ul class="p-2 bg-blue-800">
+<li><a href="club.html">Clubs & Societies</a></li>
+            
+          </ul>
+        </details>
+      </li>
+            <!-- notice -->
+       <li><a href="notices.html">Notice</a></li>
+
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </div>
+</div>
+
+  </nav>
+</header>
+
+
+
+
+
+
+
+<main>
+
+    <!-- Academic Calendar -->
+<section id="academic-calendar" class="py-16 bg-gray-100">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
+        Academic Calendar
+      </h2>
+      <p class="mt-4 text-gray-700">
+        The Academic Calendar outlines important dates and events for each semester, 
+        including class schedules, examinations, and holidays.
+      </p>
+    </div>
+
+    <!-- Calendar Table -->
+    <div class="overflow-x-auto bg-white rounded-2xl shadow-md">
+      <table class="min-w-full border border-gray-200 text-left">
+        <thead class="bg-blue-600 text-white">
+          <tr>
+            <th class="px-6 py-3 text-sm font-semibold">Semester</th>
+            <th class="px-6 py-3 text-sm font-semibold">Start Date</th>
+            <th class="px-6 py-3 text-sm font-semibold">End Date</th>
+            <th class="px-6 py-3 text-sm font-semibold">Key Events</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-200 text-gray-700">
+
+          <tr>
+            <td class="px-6 py-4 font-bold">Spring 2025</td>
+            <td class="px-6 py-4">15 January 2025</td>
+            <td class="px-6 py-4">30 May 2025</td>
+            <td class="px-6 py-4">
+              Classes Begin, Midterm Exams in March, Final Exams in May
+            </td>
+          </tr>
+
+          <tr>
+            <td class="px-6 py-4 font-bold">Summer 2025</td>
+            <td class="px-6 py-4">15 June 2025</td>
+            <td class="px-6 py-4">30 September 2025</td>
+            <td class="px-6 py-4">
+              Classes Begin, Research Workshops, Final Exams in September
+            </td>
+          </tr>
+
+          <tr>
+            <td class="px-6 py-4 font-bold">Fall 2025</td>
+            <td class="px-6 py-4">10 October 2025</td>
+            <td class="px-6 py-4">20 February 2026</td>
+            <td class="px-6 py-4">
+              Orientation Week, Hackathon, Final Exams in February
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Download Button -->
+    <div class="text-center mt-8">
+      <a href="/images/notice.pdf" 
+         class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-yellow-500 transition duration-300 transform hover:scale-105">
+        📅 Download Full Calendar
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- End Academic Calendar -->
+
+</main>
+
+
+
+<!-- Pre-Footer Section -->
+<section id="contact" class="bg-blue-800 py-10 border-t">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-6 text-center md:text-left">
+    
+    <!-- Department Info -->
+    <div class="md:col-span-2 flex flex-col items-center md:items-start">
+      <img src="/images/cselogo.jpg" alt="CSE Logo" class="customimage w-20 mb-3">
+      <h2 class="text-xl font-bold text-white">Computer Science and Engineering</h2>
+      <p class="text-white">University of Barishal</p>
+      <div class="mt-4 text-gray-300 space-y-1">
+        <p><strong>Telephone:</strong> 880-2-55155097</p>
+       
+        <p><strong>E-mail:</strong> bucse@bu.ac.bd</p>
+      </div>
+    </div>
+
+    <!-- About Us -->
+    <div>
+      <h3 class="text-lg font-bold text-white mb-3">About Us</h3>
+      <ul class="space-y-2 text-gray-300">
+        <li><a href="#" class="hover:text-yellow-400">Vision & Mission</a></li>
+        <li><a href="#" class="hover:text-yellow-400">History</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Awards</a></li>
+        <li><a href="#" class="hover:text-yellow-400">About</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Academics -->
+    <div>
+      <h3 class="text-lg font-bold text-white mb-3">Academics</h3>
+      <ul class="space-y-2 text-gray-300">
+        <li><a href="#" class="hover:text-yellow-400">Academic Calendar</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Class Routine</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Undergraduate Studies</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Graduate Studies</a></li>
+      </ul>
+    </div>
+
+    <!-- Admission -->
+    <div>
+      <h3 class="text-lg font-bold text-white mb-3">Admission</h3>
+      <ul class="space-y-2 text-gray-300">
+        <li><a href="#" class="hover:text-yellow-400">Undergraduate</a></li>
+        <li><a href="#" class="hover:text-yellow-400">Postgraduate</a></li>
+        <li><a href="#" class="hover:text-yellow-400">PG latest admission notice</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-4">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <p>Copyright © - All rights reserved BU | CSE Department</p>
+  </div>
+</footer>
+
+
+</body>
+</html>
