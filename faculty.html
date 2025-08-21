@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSE Department | BU</title>
+  
   <script src="https://cdn.tailwindcss.com"></script>
   
 
@@ -95,7 +96,7 @@
 <div class="md:hidden">
   <div class="dropdown dropdown-end">
     <label tabindex="0" class="btn btn-sm btn-outline text-white">☰</label>
-    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-blue-900 rounded-box w-52">
+   <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-blue-900 rounded-box w-52 text-lg">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       
@@ -179,58 +180,60 @@
 
 <!-- Hero Section Carousel -->
 <section id="home" class="h-screen relative">
-  <div class="carousel w-full h-screen">
+  <div class="carousel w-full h-full">
 
     <!-- Slide 1 -->
-    <div id="slide1" class="carousel-item relative w-full bg-cover bg-center"
+    <div id="slide1" class="carousel-item relative w-full h-full bg-cover bg-center"
          style="background-image: url('images/image2.jpg');">
       <div class="flex items-center justify-center w-full h-full bg-black bg-opacity-50 text-white">
-        <div class="text-center">
+        <div class="text-center px-4">
           <h2 class="text-4xl md:text-6xl font-bold mb-4">Welcome to CSE Department</h2>
           <p class="text-lg md:text-xl mb-6">Innovating the Future with Technology & Research</p>
-          <a href="index.html" class="btn bg-yellow-400 text-black font-semibold hover:bg-yellow-500">
+          <a href="index.html" class="btn text-white border-none rounded-2xl shadow hover:bg-primary bg-blue-600 transition">
             Learn More
           </a>
         </div>
       </div>
-      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-        <a href="#slide3" class="btn btn-circle">❮</a>
-        <a href="#slide2" class="btn btn-circle">❯</a>
+      <!-- Navigation -->
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2 px-5">
+        <a href="#slide3" class="btn btn-circle bg-transparent border-none text-white text-opacity10 hover:text-opacity-300">❮</a>
+        <a href="#slide2" class="btn btn-circle bg-transparent border-none text-white text-opacity-50 hover:text-opacity-100">❯</a>
       </div>
     </div>
 
     <!-- Slide 2 -->
-    <div id="slide2" class="carousel-item relative w-full bg-cover bg-center"
+    <div id="slide2" class="carousel-item relative w-full h-full bg-cover bg-center"
          style="background-image: url('images/image.png');">
       <div class="flex items-center justify-center w-full h-full bg-black bg-opacity-50 text-white">
-        <div class="text-center">
+        <div class="text-center px-4">
           <h2 class="text-4xl md:text-6xl font-bold mb-4">Explore Cutting-edge Research</h2>
           <p class="text-lg md:text-xl mb-6">Where innovation meets creativity</p>
         </div>
       </div>
-      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-        <a href="#slide1" class="btn btn-circle">❮</a>
-        <a href="#slide3" class="btn btn-circle">❯</a>
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2 px-5">
+        <a href="#slide1" class="btn btn-circle bg-transparent border-none text-white text-opacity-50 hover:text-opacity-100">❮</a>
+        <a href="#slide3" class="btn btn-circle bg-transparent border-none text-white text-opacity-50 hover:text-opacity-100">❯</a>
       </div>
     </div>
 
     <!-- Slide 3 -->
-    <div id="slide3" class="carousel-item relative w-full bg-cover bg-center"
+    <div id="slide3" class="carousel-item relative w-full h-full bg-cover bg-center"
          style="background-image: url('images/image3.jpg');">
       <div class="flex items-center justify-center w-full h-full bg-black bg-opacity-50 text-white">
-        <div class="text-center">
+        <div class="text-center px-4">
           <h2 class="text-4xl md:text-6xl font-bold mb-4">Join Our Learning Community</h2>
           <p class="text-lg md:text-xl mb-6">Empowering the next generation of engineers</p>
         </div>
       </div>
-      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-        <a href="#slide2" class="btn btn-circle">❮</a>
-        <a href="#slide1" class="btn btn-circle">❯</a>
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-0 right-0 top-1/2 px-5">
+        <a href="#slide2" class="btn btn-circle bg-transparent border-none text-white text-opacity-50 hover:text-opacity-100">❮</a>
+        <a href="#slide1" class="btn btn-circle bg-transparent border-none text-white text-opacity-50 hover:text-opacity-100">❯</a>
       </div>
     </div>
 
   </div>
 </section>
+
 
 <main class="py-12 bg-base-200">
 
@@ -267,126 +270,182 @@
   </nav>
 
   <!-- Sections -->
-  <div class="container mx-auto px-6 space-y-16">
+  <div id="faculty" class="container mx-auto px-6 space-y-16">
 
-    <!-- All Faculty -->
-    <section id="faculty">
-      <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
-        <i class="fas fa-users"></i> Chairman
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-        <!-- Faculty card -->
-        <div class="card bg-base-100 shadow-xl p-6 text-center">
-          <img src="images/rahat-sir.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Dr. Rahat">
-          <h3 class="text-xl font-bold">Dr. Rahat Hossain Faisal</h3>
-          <p class="text-sm text-gray-500">Department Head</p>
-          <p class="mt-2">📞 01733977761</p>
-          <p>✉️ chair_cse@bu.ac.bd</p>
-        </div>
-      </div>
-    </section>
 
     <!-- Professors -->
-    <section id="professors">
+  
+    <section id="professors" class="faculty-section">
       <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
         <i class="fas fa-user-tie"></i> Professors
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Professor Card -->
+                 <div class="card bg-base-100 shadow-xl p-6 text-center">
+          <img src="images/rahat-sir.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Dr. Rahat">
+          <h3 class="text-xl font-bold">Dr. Rahat Hossain Faisal</h3>
+          <p class="text-sm text-gray-500">Department Head</p>
+          <p class="mt-2">&#x1F4DE; 01733977761</p>
+          <p>&#x2709; cahir@bu.ac.bd</p>
+
+        </div>
         <div class="card bg-base-100 shadow-xl p-6 text-center">
           <img src="images/manjur-sir.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Dr. Md Manjur Ahmed">
           <h3 class="text-xl font-bold">Dr. Md Manjur Ahmed</h3>
           <p class="text-sm text-gray-500">Professor</p>
-          <p class="mt-2">📞 01851924944</p>
-          <p>✉️ mmahmed@bu.ac.bd</p>
+          <p class="mt-2">&#x1F4DE; 01733977761</p>
+          <p>&#x2709; cahir@bu.ac.bd</p>
         </div>
-                <div class="card bg-base-100 shadow-xl p-6 text-center">
-          <img src="images/manjur-sir.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Dr. Md Manjur Ahmed">
-          <h3 class="text-xl font-bold">Dr. Md Manjur Ahmed</h3>
-          <p class="text-sm text-gray-500">Professor</p>
-          <p class="mt-2">📞 01851924944</p>
-          <p>✉️ mmahmed@bu.ac.bd</p>
-        </div>
-                <div class="card bg-base-100 shadow-xl p-6 text-center">
-          <img src="images/manjur-sir.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Dr. Md Manjur Ahmed">
-          <h3 class="text-xl font-bold">Dr. Md Manjur Ahmed</h3>
-          <p class="text-sm text-gray-500">Professor</p>
-          <p class="mt-2">📞 01851924944</p>
-          <p>✉️ mmahmed@bu.ac.bd</p>
-        </div>
+
       </div>
     </section>
     <!--assistant professor-->
-    <section id="assistant">
+<section id="assistant" class="faculty-section">
       <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
         <i class="fas fa-user-tie"></i>Assistant Professors
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Professor Card -->
+
         <div class="card bg-base-100 shadow-xl p-6 text-center">
           <img src="images/Erfan-sir.jpeg" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Md erfan">
           <h3 class="text-xl font-bold">Md.Erfan</h3>
           <p class="text-sm text-gray-500">Assistant Professor</p>
-          <p class="mt-2">📞 01687689764</p>
-          <p>✉️ erfan@bu.ac.bd</p>
+          <p class="mt-2">&#x1F4DE; 01733977761</p>
+          <p>&#x2709; erfan@bu.ac.bd</p>
         </div>
         <div class="card bg-base-100 shadow-xl p-6 text-center">
-          <img src="images/Erfan-sir.jpeg" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Md erfan">
-          <h3 class="text-xl font-bold">Md.Erfan</h3>
+          <img src="images/sams-sir.jpeg" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Md erfan">
+          <h3 class="text-xl font-bold">Md. Samsuddohoa</h3>
           <p class="text-sm text-gray-500">Assistant Professor</p>
-          <p class="mt-2">📞 01687689764</p>
-          <p>✉️ erfan@bu.ac.bd</p>
+          <p class="mt-2">&#x1F4DE; 01733977761</p>
+          <p>&#x2709; sams@bu.ac.bd</p>
         </div>
         <div class="card bg-base-100 shadow-xl p-6 text-center">
-          <img src="images/Erfan-sir.jpeg" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Md erfan">
+          <img src="images/asif-sir.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Md erfan">
+          <h3 class="text-xl font-bold">Md. Rashid Al Asif</h3>
+          <p class="text-sm text-gray-500">Assistant Professor</p>
+          <p class="mt-2">&#x1F4DE; 01733977761</p>
+          <p>&#x2709; asif@bu.ac.bd</p>
+        </div>
+        <div class="card bg-base-100 shadow-xl p-6 text-center">
+          <img src="images/noor-sir.png" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Md erfan">
           <h3 class="text-xl font-bold">Md.Erfan</h3>
           <p class="text-sm text-gray-500">Assistant Professor</p>
-          <p class="mt-2">📞 01687689764</p>
-          <p>✉️ erfan@bu.ac.bd</p>
+          <p class="mt-2">&#x1F4DE; 01733977761</p>
+          <p>&#x2709; mnoor@bu.ac.bd</p>
+        </div>
+        <div class="card bg-base-100 shadow-xl p-6 text-center">
+          <img src="images/tania-mam.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Md erfan">
+          <h3 class="text-xl font-bold">Dr. Tania Islam</h3>
+          <p class="text-sm text-gray-500">Assistant Professor</p>
+          <p class="mt-2">&#x1F4DE; 01733977761</p>
+          <p>&#x2709; tania@bu.ac.bd</p>
         </div>
       </div>
     </section>
 
     <!-- Lecturers -->
-    <section id="lecturers">
+ <section id="lecturers" class="faculty-section">
       <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
         <i class="fas fa-chalkboard-teacher"></i> Lecturers
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="card bg-base-100 shadow-xl p-6 text-center">
-          <img src="images/lecturer.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Lecturer Name">
+          <img src="images/main-logo-rounded.png" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Lecturer Name">
           <h3 class="text-xl font-bold">Lecturer Name</h3>
           <p class="text-sm text-gray-500">Lecturer</p>
-          <p class="mt-2">📞 01XXXXXXXXX</p>
-          <p>✉️ lecturer@bu.ac.bd</p>
+          <p class="mt-2">&#x1F4DE; 01733977761</p>
+          <p>&#x2709; lecturer@bu.ac.bd</p>
         </div>
       </div>
     </section>
 
     <!-- Past Faculties -->
-    <section id="pastfaculties">
+  <section id="pastfaculties" class="faculty-section">
       <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
-        <i class="fas fa-history"></i> Past Faculties
+        <i class="fas fa-user-tie"></i>Past Faculties
       </h2>
-      <p class="text-gray-600">upcomming...</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card bg-base-100 shadow-xl p-6 text-center">
+          <img src="images/mostafiz-sir.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Md erfan">
+          <h3 class="text-xl font-bold">Md. Mostafiz</h3>
+          <p class="text-sm text-gray-500">Assistant Professor</p>
+          <p class="mt-2">&#x1F4DE; 01733977761</p>
+          <p>&#x2709; mostafiz@bu.ac.bd</p>
+        </div>
+                <div class="card bg-base-100 shadow-xl p-6 text-center">
+          <img src="images/sohely-mam.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Md erfan">
+          <h3 class="text-xl font-bold">Shoely Jahan</h3>
+          <p class="text-sm text-gray-500">Assistant Professor</p>
+          <p class="mt-2">&#x1F4DE; 01733977761</p>
+          <p>&#x2709; shohely@bu.ac.bd</p>
+        </div>
+
+
+      </div>
     </section>
 
     <!-- Officer & Staff -->
-    <section id="officerstaff">
+<section id="officerstaff" class="faculty-section">
       <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
         <i class="fas fa-id-card"></i> Officer & Staff
       </h2>
-      <p class="text-gray-600">upcomming...</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card bg-base-100 shadow-xl p-6 text-center">
+          <img src="images/farzana.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Md erfan">
+          <h3 class="text-xl font-bold">Farjana Yesmin</h3>
+          <p class="text-sm text-gray-500">Section Officer</p>
+          <p class="mt-2">&#x1F4DE; 01733977761</p>
+          <p>&#x2709; farzana@bu.ac.bd</p>
+        </div>
+                <div class="card bg-base-100 shadow-xl p-6 text-center">
+          <img src="images/rayhan.jpg" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" alt="Md erfan">
+          <h3 class="text-xl font-bold">Abu Rayhan</h3>
+          <p class="text-sm text-gray-500">Junior Instrument Engineer</p>
+          <p class="mt-2">&#x1F4DE; 01733977761</p>
+          <p>&#x2709; rayhan@bu.ac.bd</p>
+        </div>
+     
     </section>
 
   </div>
 </main>
 
 
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll(".faculty-section");
+    const navLinks = document.querySelectorAll("nav a[href^='#']"); // শুধু যেগুলো # দিয়ে শুরু
+
+    // Hide all sections except first by default
+    sections.forEach((sec, idx) => {
+      sec.style.display = idx === 0 ? "block" : "none";
+    });
+
+    // Add click events for faculty nav
+    navLinks.forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault(); // শুধু এই nav এর জন্য
+
+        // Hide all sections
+        sections.forEach(sec => sec.style.display = "none");
+
+        // Show selected section
+        const targetId = this.getAttribute("href").substring(1);
+        document.getElementById(targetId).style.display = "block";
+
+        // Highlight active tab
+        navLinks.forEach(l => l.classList.remove("bg-blue-700"));
+        this.classList.add("bg-blue-700");
+      });
+    });
+  });
+</script>
+
+
 <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
-
-
-
 
 
 
@@ -400,9 +459,9 @@
       <h2 class="text-xl font-bold text-white">Computer Science and Engineering</h2>
       <p class="text-white">University of Barishal</p>
       <div class="mt-4 text-gray-300 space-y-1">
-        <p><strong>Telephone:</strong> 880-2-55155097</p>
+        <p><strong>&#x260E;Telephone:</strong> 880-2-55155097</p>
        
-        <p><strong>E-mail:</strong> bucse@bu.ac.bd</p>
+        <p><strong>&#x2709;E-mail:</strong> bucse@bu.ac.bd</p>
       </div>
     </div>
 
